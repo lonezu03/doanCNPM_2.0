@@ -1,0 +1,776 @@
+@charset "UTF-8";
+body {
+  width: 1500px;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+body #app {
+  width: 100%;
+  align-items: center;
+  margin: auto;
+}
+body #app #home-tong {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: block;
+  background-size: cover;
+  background-color: #84bb97;
+}
+body #app #home-tong #home {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-color: #84bb97;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #app #home-tong #home #btn-dn {
+  position: absolute;
+  top: -8%;
+  right: 10%;
+  z-index: 9;
+  background-color: #245d3c;
+  border: solid black 2px;
+  padding: 5px 8px;
+  border-radius: 8px;
+}
+body #app #home-tong #home #btn-dn:hover {
+  color: #245d3c;
+  background-color: white;
+}
+body #app #home-tong #home #form-dn form {
+  z-index: 10;
+  color: whitesmoke;
+  position: fixed; /* Đặt form cố định so với viewport */
+  top: 50%; /* Đặt form ở giữa theo chiều dọc */
+  left: 50%; /* Đặt form ở giữa theo chiều ngang */
+  transform: translate(-50%, -50%); /* Dịch chuyển form để nó chính xác ở giữa */
+}
+body #app #home-tong #home #form-dn form::before {
+  position: absolute;
+  width: 3500px;
+  height: 3500px;
+  display: block;
+  content: "";
+  top: -750px !important;
+  left: -850px !important;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  z-index: -1;
+}
+body #app #home-tong #home #form-dn #btnCancle {
+  position: absolute;
+  right: 0%;
+  color: white;
+  margin: 5px;
+}
+body #app #home-tong #home #form-dn #dangnhap {
+  color: white;
+  background-color: blur;
+  margin: 0px;
+  padding: 8px;
+  height: 100%;
+  border: 3px solid;
+  border-image-source: linear-gradient(red, blue);
+  border-image-slice: 1;
+  border-radius: 8px;
+  text-decoration: none;
+}
+body #app #home-tong #home #form-dn #dangnhap:hover {
+  background-color: rgb(16, 5, 169);
+}
+body #app #home-tong #home #bd {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, transparent, black);
+}
+body #app #home-tong #home #bd::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  left: 0;
+  background-image: linear-gradient(to bottom, transparent, black, transparent, black);
+}
+body #app #home-tong #home #bd img {
+  width: 1500px;
+  position: relative;
+  z-index: 1;
+}
+body #app #home-tong #home #bd p {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  margin-bottom: 8%;
+  z-index: 3;
+  color: white;
+  font-weight: 700;
+  gap: 60px;
+  font-size: 40px;
+  left: 10%;
+}
+body #app #home-tong .homeads1 {
+  color: aliceblue;
+  display: block !important;
+  background-image: linear-gradient(to bottom, transparent, black);
+  width: 1500px;
+  height: 1000px;
+  position: relative;
+  font-weight: 800;
+}
+body #app #home-tong .homeads1 h1 {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  font-weight: 900;
+  width: 400px;
+}
+body #app #home-tong .homeads1 p {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  font-size: 25px;
+  font-weight: 600;
+  width: 400px;
+}
+body #app #home-tong .homeads1 img {
+  position: absolute;
+  background-color: transparent;
+  right: 0;
+  top: 30%;
+  z-index: 2;
+}
+body #app #home-tong .homeads1 video {
+  position: absolute;
+  right: -8%;
+  top: 40%;
+  width: 900px;
+  height: 250px;
+  z-index: 1;
+}
+body #app #home-tong .homeads2 {
+  color: aliceblue;
+  width: 1500px;
+  display: block !important;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  font-weight: 800;
+}
+body #app #home-tong .homeads2 h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  font-weight: 900;
+  top: 15%;
+}
+body #app #home-tong .homeads2 p {
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: 600;
+  font-size: xx-large;
+  top: 25%;
+}
+body #app #home-tong .homeads2 img {
+  width: 100%;
+  height: 100%;
+}
+body .trangchu {
+  align-items: center;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+body .xemphim {
+  background-color: #181d23;
+  z-index: 2;
+}
+body .xemphim .gioithieuphim {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 600px;
+  width: 1499px;
+  background-image: url("https://movie-detail-drab.vercel.app/assets/images/movie-detail-bg.png  ");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .xemphim .gioithieuphim #anh {
+  background-color: aliceblue;
+}
+body .xemphim .gioithieuphim #anh img {
+  height: 450px;
+  width: 300px;
+}
+body .xemphim .gioithieuphim #chuacontentvabovochoday {
+  transform: translate(450px, -400px);
+  position: relative;
+}
+body .xemphim .gioithieuphim #chuacontentvabovochoday #content p {
+  font-size: 30px;
+  font-weight: 1000;
+  color: #fcf22f;
+}
+body .xemphim .gioithieuphim #chuacontentvabovochoday #content h3 {
+  font-size: 50px;
+  color: #fcf22f;
+  font-weight: 800;
+}
+body .xemphim .gioithieuphim #chuacontentvabovochoday #content h3::first-letter {
+  color: white;
+}
+body .xemphim .gioithieuphim #chuacontentvabovochoday #content h5 {
+  width: 650px;
+  color: #958c7d;
+}
+body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday {
+  position: absolute;
+  display: flex;
+  color: #958c7d;
+  gap: 30px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 90px;
+  top: 100%;
+}
+body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday #icon {
+  transform: translate(0, 4px);
+}
+body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday img {
+  width: 5%;
+  height: 5%;
+}
+body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday h2 {
+  color: yellow;
+  font-weight: 600;
+}
+body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday button {
+  background-color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: solid rgb(207, 197, 100);
+  border-radius: 100px;
+}
+body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday button:hover {
+  background-color: #b5ac03;
+}
+body .xemphim .gioithieuphim #dow {
+  position: absolute;
+  right: 10%;
+  bottom: 24%;
+  transform: rotate(0.25turn) translateY(100%);
+  transform-origin: bottom right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #b5ac03;
+  border: solid rgb(148, 148, 14);
+  border-radius: 9px;
+}
+body .xemphim .gioithieuphim #dow p {
+  color: white;
+  font-size: 18px;
+  align-items: center;
+  letter-spacing: 5px;
+  font-family: " sans-serif";
+  transform: translate(0, 8px);
+}
+body .xemphim .gioithieuphim #dow:hover {
+  background-color: #7a7507;
+}
+body .xemphim .phimne {
+  color: yellow;
+  margin-top: 400px;
+  text-align: center;
+  justify-content: center;
+}
+body .xemphim .phimne #my_iframe {
+  height: 500px;
+  margin-top: 50px;
+  left: 60px;
+  transform: translate(20px, 200px) !important;
+}
+body .menut {
+  align-items: center;
+  width: 1500px;
+  color: rgb(244, 243, 243);
+  background-color: #84bb97;
+  font-size: larger;
+  font-weight: 200px;
+  position: sticky;
+  top: 0;
+  z-index: 8;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+body .menut img {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+body .menut .menuall .navbar-nav {
+  position: absolute;
+  left: 30%;
+  z-index: 0;
+  gap: 50px;
+  transform: translate(50px, 0);
+  font-size: 25px;
+  color: blue;
+  font-weight: 600;
+}
+body .menut .menuall .navbar-nav #link {
+  color: black;
+  text-decoration: none;
+}
+body .menut .menuall .navbar-nav #link:hover {
+  font-weight: 1000;
+}
+body .menut .menuall #user {
+  position: absolute;
+  transform: translate(0px, 8px);
+  color: blue;
+  right: 5%;
+  font-size: 22px;
+  font-weight: 500;
+}
+body .footer ul {
+  list-style-type: none;
+}
+body .footer .chua3ul {
+  display: flex;
+  height: auto;
+  gap: 100px;
+  padding-top: 20px;
+  color: white;
+  transform: translate(10%, 0);
+}
+body .footer .chua3ul .chuaul .lienhe {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .footer .chua3ul .fb > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 50px;
+}
+body .footer .chua3ul .fb > ul #btt {
+  background-color: transparent;
+  border: solid rgb(95, 174, 111);
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+body .footer .chua3ul .fb > ul #btt:hover {
+  color: #84bb97;
+  background-color: white;
+  border: 0px;
+}
+body .phimnoibat {
+  color: antiquewhite;
+}
+body .phimnoibat h1 {
+  color: antiquewhite;
+  font-size: 40px;
+  height: 900px;
+  z-index: 3;
+}
+body .phimnoibat #noibat {
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 1;
+}
+body .phimnoibat #noibat::before {
+  position: absolute;
+  top: 0;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 55%;
+  content: "";
+  z-index: 2;
+  background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5333333333), black);
+}
+body .phimnoibat #noibat::after {
+  position: absolute;
+  top: 0;
+  display: block;
+  left: 0;
+  content: "Phim nổi bật";
+  width: 100%;
+  height: 100px;
+  font-size: 70px;
+  font-weight: 800;
+  transform: translate(5%, 420px);
+  z-index: 3;
+}
+body .phimnoibat #noibat #vd {
+  display: block;
+  width: 1500px;
+}
+body .phimnoibat #noibat .noidungpnb {
+  transform: translate(5%, -340px);
+  font-size: 20px;
+  font-weight: 300;
+}
+body .phimnoibat #noibat .noidungpnb #chuatenvatheloai {
+  display: flex;
+  width: 600px;
+}
+body .phimnoibat #noibat .noidungpnb #chuatenvatheloai #theloai {
+  color: greenyellow;
+  font-weight: 500;
+  transform: translate(0, 10px);
+}
+body .phimnoibat #noibat .noidungpnb #chuatenvatheloai #tenphim {
+  font-size: 30px;
+  color: yellow;
+  font-weight: 700;
+}
+body .phimnoibat #noibat .noidungpnb p {
+  width: 500px;
+  margin: 25px;
+  margin-left: 0;
+}
+body .phimnoibat #noibat .noidungpnb #link {
+  text-decoration: none;
+  color: antiquewhite;
+  z-index: 3;
+  border: solid greenyellow 3px;
+  padding: 8px;
+  border-radius: 8px;
+  z-index: 10;
+}
+body .phimnoibat #noibat .noidungpnb #link p {
+  color: antiquewhite;
+}
+body .phimnoibat #noibat .noidungpnb #link:hover {
+  background-color: rgb(116, 116, 15);
+}
+body .phimnoibat #noibat #iconnext {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  right: 10%;
+  bottom: 32%;
+}
+
+@media only screen and (max-width: 390px) {
+  body {
+    max-width: 390px !important;
+  }
+  #app {
+    max-width: 390px;
+    width: 390px !important;
+  }
+  #app .xemphim {
+    max-width: 390px;
+    width: 390px !important;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #app .xemphim .phimne {
+    height: 100px !important;
+  }
+  #app .xemphim .phimne h1 {
+    transform: translate(0, -400px);
+  }
+  #app .xemphim .phimne #my-iframe {
+    padding-top: 0;
+    margin-top: 0;
+    max-width: 390px;
+    width: 390px;
+    height: 300px;
+    transform: translate(0, -400px);
+  }
+  #app .gioithieuphim {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    max-width: 390px;
+    height: 1400px;
+  }
+  #app .gioithieuphim #btnanh {
+    transform: translate(20px, -300px) !important;
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #content {
+    position: relative;
+    transform: translate(-760px, 530px) !important;
+    text-align: left;
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #content p {
+    font-size: 22px;
+    font-weight: 1000;
+    color: #fcf22f;
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #content h3 {
+    font-size: 25px;
+    max-width: 350px;
+    color: #fcf22f;
+    font-weight: 700;
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #content h5 {
+    width: 650px;
+    color: #958c7d;
+    font-size: 15px;
+    max-width: 360px;
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #bovochoday {
+    transform: translate(-760px, 530px) !important;
+    max-width: 330px;
+    max-height: 200px;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding: 40px;
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #bovochoday #icon {
+    width: 30px;
+    align-items: center !important;
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #bovochoday h2 {
+    transform: translate(-30px, 15px);
+    min-width: 140px;
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #bovochoday p {
+    min-width: 140px;
+    transform: translate(-30px, 15px);
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #bovochoday button {
+    align-items: center;
+    min-width: 150px;
+    background-color: none;
+    transform: translate(30px, 0);
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #bovochoday button:hover {
+    background-color: #b5ac03;
+  }
+  #app .gioithieuphim #dow {
+    transform: rotate(0) translateY(100%);
+    transform: translate(-110px, 300px);
+  }
+  #app .gioithieuphim #dow:hover {
+    background-color: #7a7507;
+  }
+  #app #home-tong {
+    background-color: rgba(15, 14, 11, 0.4784313725);
+    max-width: 390px;
+  }
+  #app #home-tong #home {
+    position: relative;
+    height: 350px !important;
+  }
+  #app #home-tong #home #btn-dn {
+    transform: translate(-20px, -13px);
+    padding: 4px;
+    border: solid red 1px !important;
+    background-color: rgb(184, 12, 12) !important;
+    font-size: 12px;
+  }
+  #app #home-tong #home #btn-dn:hover {
+    background-color: white;
+    color: red;
+  }
+  #app #home-tong #home #form-dn form {
+    position: absolute;
+    top: 0;
+    transform: translate(-100px, -200px) !important;
+    z-index: 10 !important;
+  }
+  #app #home-tong #home #form-dn form::before {
+    height: 3000px !important;
+    z-index: -1;
+  }
+  #app #home-tong #home #bd {
+    height: 300px !important;
+  }
+  #app #home-tong #home #bd::before {
+    height: 300px !important;
+  }
+  #app #home-tong #home #bd img {
+    max-width: 390px;
+  }
+  #app #home-tong #home #bd p {
+    max-width: 280px;
+    font-size: 16px !important;
+  }
+  #app #home-tong #home #bd #gt {
+    transform: translate(10px, -100px);
+  }
+  #app #home-tong .homeads1 {
+    text-align: center;
+    display: block !important;
+    width: 390px !important;
+    height: 350px !important;
+  }
+  #app #home-tong .homeads1 h1 {
+    z-index: 9;
+    font-size: 21px !important;
+    transform: translate(-60px, -180px);
+  }
+  #app #home-tong .homeads1 p {
+    z-index: 9;
+    font-size: 15px !important;
+    transform: translate(-30px, -156px);
+    width: 350px !important;
+  }
+  #app #home-tong .homeads1 img {
+    transform: translate(0px, -140px);
+    width: 400px !important;
+  }
+  #app #home-tong .homeads1 video {
+    width: 350px !important;
+    transform: translate(-50px, -147px);
+  }
+  #app #home-tong .homeads2 {
+    display: block !important;
+    width: 390px !important;
+  }
+  #app #home-tong .homeads2 h1 {
+    z-index: 9;
+    font-size: 18px !important;
+    transform: translate(0px, -120px);
+  }
+  #app #home-tong .homeads2 p {
+    z-index: 9;
+    font-size: 14px !important;
+    transform: translate(20px, -120px);
+    width: 350px !important;
+  }
+  #app #home-tong .homeads2 img {
+    width: 390px !important;
+    transform: translate(0px, -60px);
+  }
+  #app .menut {
+    position: sticky;
+    top: 0;
+    max-width: 390px;
+    color: aliceblue;
+    background-color: #84bb97 !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+            backdrop-filter: blur(10px) !important;
+  }
+  #app .menut img {
+    padding: 5px;
+    width: 50%;
+    height: 50%;
+  }
+  #app .menut .menuall .navbar-nav {
+    position: absolute;
+    left: 10%;
+    z-index: 0;
+    gap: 5px;
+    transform: translate(50px, 0);
+    font-size: 12px;
+    color: rgb(0, 0, 108);
+    font-weight: 600;
+  }
+  #app .menut .menuall .navbar-nav #link {
+    text-decoration: none;
+  }
+  #app .menut .menuall #user {
+    position: absolute;
+    transform: translate(15px, 8px);
+    color: rgb(72, 72, 219);
+    right: 2px;
+    font-size: 10px;
+    width: 50px;
+    font-weight: 500;
+  }
+  #app .phimnoibat {
+    max-width: 390px;
+    height: 300px;
+  }
+  #app .phimnoibat #noibat {
+    position: relative;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 1;
+  }
+  #app .phimnoibat #noibat::before {
+    display: none !important;
+  }
+  #app .phimnoibat #noibat::after {
+    height: 52px !important;
+    transform: translate(5px, 20px) !important;
+    font-size: 18px !important;
+  }
+  #app .phimnoibat #noibat #vd {
+    max-width: 390px;
+  }
+  #app .phimnoibat #noibat .noidungpnb {
+    width: 280px;
+    transform: translate(0, -110%) !important;
+  }
+  #app .phimnoibat #noibat .noidungpnb #chuatenvatheloai {
+    width: 240px !important;
+  }
+  #app .phimnoibat #noibat .noidungpnb #chuatenvatheloai #tenphim {
+    margin-top: 30px;
+    margin-bottom: 0;
+    transform: translate(0, 8px);
+    margin-left: 3px;
+  }
+  #app .phimnoibat #noibat .noidungpnb #chuatenvatheloai #theloai {
+    transform: translate(-20px, 60px) !important;
+  }
+  #app .phimnoibat #noibat .noidungpnb #link {
+    text-decoration: none;
+    color: antiquewhite;
+    border: solid greenyellow 3px;
+    font-size: 12px;
+    padding: 5px !important;
+    border-radius: 8px;
+    z-index: 9;
+  }
+  #app .phimnoibat #noibat .noidungpnb p {
+    font-size: 12px !important;
+    max-width: 300px;
+    margin-left: 3px !important;
+  }
+  #app .phimnoibat #noibat #iconnext {
+    transform: translate(-150%, -20px);
+    font-size: 8px;
+  }
+  #app .footer {
+    background-color: #181d23;
+  }
+  #app .footer .chua3ul {
+    font-size: 12px;
+    margin: 0;
+    gap: 0;
+    transform: translate(-13px, 0px);
+    max-width: 390px;
+    flex-wrap: wrap;
+    background-color: #181d23;
+  }
+  #app .footer .chua3ul ul {
+    list-style-type: none;
+  }
+  #app .footer .chua3ul .fb > ul {
+    transform: translate(140px, -270px);
+  }
+}/*# sourceMappingURL=App.css.map */

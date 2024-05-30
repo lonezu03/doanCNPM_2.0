@@ -1,0 +1,177 @@
+.trangchu .tim {
+  transform: translate(1130px, 70px);
+}
+.trangchu .tim #form #query {
+  height: 35px;
+}
+.trangchu .chuaphimvaloc {
+  background-color: #181d23;
+  display: flex;
+}
+.trangchu .chuaphimvaloc .column1 {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 75%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: left;
+}
+.trangchu .chuaphimvaloc .column1 .column15 {
+  height: 510px;
+}
+.trangchu .chuaphimvaloc .column1 .column15 .anhphim {
+  border: 2px solid rgb(97, 79, 79);
+  background-color: rgb(40, 35, 35);
+  width: 300px;
+  padding: 10px;
+  height: 450px;
+  display: flex;
+  z-index: 1;
+  position: relative;
+}
+.trangchu .chuaphimvaloc .column1 .column15 .anhphim:hover {
+  background-color: black;
+}
+.trangchu .chuaphimvaloc .column1 #link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  text-align: left;
+  background-color: black;
+}
+.trangchu .chuaphimvaloc .column1 #link #title {
+  width: 200px;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 5px;
+  padding-left: 18px;
+}
+.trangchu .chuaphimvaloc .column1 #link #title:hover {
+  color: #b5ac03;
+}
+.trangchu .chuaphimvaloc .column1 #link span {
+  position: absolute;
+  color: white;
+  top: 10px;
+  left: 10px;
+  border: solid black 2px;
+  background-color: #821708;
+  padding: 1px 6px;
+  z-index: 1;
+}
+.trangchu .chuaphimvaloc .ulloc {
+  color: yellowgreen;
+  text-align: left;
+  width: 300px;
+  list-style-type: none;
+  font-size: 25px;
+  margin-top: 90px;
+  display: flex;
+  font-family: cursive;
+  flex-direction: column;
+  gap: 20px;
+  border: solid black 4px;
+}
+.trangchu .chuaphimvaloc .ulloc span {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 390px) {
+  .trangchu {
+    max-width: 390px;
+  }
+  .trangchu .tim {
+    transform: translate(48px, 70px);
+  }
+  .trangchu .tim #form #query {
+    height: 35px;
+  }
+  .trangchu .chuaphimvaloc {
+    display: flex;
+    flex-direction: column;
+    background-color: #555458;
+    align-items: center;
+  }
+  .trangchu .chuaphimvaloc .column1 {
+    order: 2;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 80%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: left;
+  }
+  .trangchu .chuaphimvaloc .column1 .column15 {
+    height: 266px;
+    width: 150px;
+  }
+  .trangchu .chuaphimvaloc .column1 .column15 .anhphim {
+    border: 2px solid rgb(97, 79, 79);
+    background-color: rgb(40, 35, 35);
+    width: 150px;
+    padding: 10px;
+    height: 225px;
+    display: flex;
+    z-index: 1;
+    position: relative;
+  }
+  .trangchu .chuaphimvaloc .column1 .column15 .anhphim:hover {
+    background-color: black;
+  }
+  .trangchu .chuaphimvaloc .column1 #link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    text-align: left;
+    background-color: black;
+  }
+  .trangchu .chuaphimvaloc .column1 #link #title {
+    width: 140px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+  .trangchu .chuaphimvaloc .column1 #link #title:hover {
+    color: #b5ac03;
+  }
+  .trangchu .chuaphimvaloc .column1 #link span {
+    position: absolute;
+    color: white;
+    top: 10px;
+    left: 10px;
+    border: solid black 2px;
+    background-color: #821708;
+    padding: 1px 6px;
+    font-size: 12px;
+    z-index: 1;
+  }
+  .trangchu .chuaphimvaloc .ulloc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: rgb(200, 214, 172);
+    order: 1;
+    width: 300px;
+    font-size: 12px;
+    gap: 20px;
+  }
+  .trangchu .chuaphimvaloc .ulloc span {
+    display: inline;
+    color: red;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}/*# sourceMappingURL=trangchinh.css.map */

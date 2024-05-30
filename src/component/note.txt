@@ -1,0 +1,25 @@
+import { NavLink } from "react-router-dom";
+
+<NavLink to="/about" activeClassName="selected">About</NavLink>
+
+
+<NavLink exact activeStyle={{ backgroundColor: 'white', color: 'red' }} to="/" className="my-link">Trang Chu</NavLink>
+
+
+
+Tóm tắt
+Ba trăm năm trước, Thiếu niên xuất sắc Viên Thiên Cương, do số mệnh tự nhiên bị bỏ rơi, từ nhỏ đã giết chết những người thân xung quanh mình. Từ đó, anh quyết định sử dụng nghệ thuật chiêm tinh “Châm Cốt Chiêm Mệnh”, chuyên sát hại những người có số mệnh không nên chấm dứt. Lúc đó, là cuối thời kỳ nhà Tùy, khi đất nước hỗn loạn Viên Thiên Cương sẽ làm thế nào để thay đổi số phận và trở thành một tướng quân mà mọi người kính trọng?
+
+thể loại
+
+
+dùng front awesome npm i --save @fortawesome/fontawesome-svg-core
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/free-regular-svg-icons
+npm i --save @fortawesome/free-brands-svg-icons
+npm i --save @fortawesome/react-fontawesome@latest
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
+hoạt hình , hành động, cổ trang, viễn tưởng
