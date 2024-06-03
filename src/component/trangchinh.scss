@@ -1,5 +1,6 @@
 .trangchu{
   .tim{
+    display: none;
     transform: translate(1130px,70px);
     #form{
       #query{
@@ -26,6 +27,7 @@
 .column1 {
   height: fit-content;
   width: 75%;
+  order: 1;
   //margin: auto;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -41,7 +43,7 @@
  // border:solid white 3px;
  // border-radius: 20px ;
   .column15{
-    height: 510px;
+    height: 300px;
 
   .anhphim {
     border: 2px solid rgb(97, 79, 79);
@@ -49,7 +51,7 @@
     background-color: rgb(40, 35, 35);
     width: 300px;
     padding: 10px;
-    height: 450px;
+    height: 250px;
     display: flex;
    // grid-template-rows: 50% 25% 25%;
     z-index: 1;
@@ -98,7 +100,7 @@
   //padding-left: 90px;
   color: yellowgreen;
   text-align: left;
-  
+  margin-left: 50px;
   width: 300px;
   list-style-type: none;
   font-size: 25px;

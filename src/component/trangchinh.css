@@ -1,4 +1,5 @@
 .trangchu .tim {
+  display: none;
   transform: translate(1130px, 70px);
 }
 .trangchu .tim #form #query {
@@ -12,6 +13,7 @@
   height: -moz-fit-content;
   height: fit-content;
   width: 75%;
+  order: 1;
   padding-bottom: 30px;
   padding-top: 30px;
   display: flex;
@@ -22,14 +24,14 @@
   align-items: left;
 }
 .trangchu .chuaphimvaloc .column1 .column15 {
-  height: 510px;
+  height: 300px;
 }
 .trangchu .chuaphimvaloc .column1 .column15 .anhphim {
   border: 2px solid rgb(97, 79, 79);
   background-color: rgb(40, 35, 35);
   width: 300px;
   padding: 10px;
-  height: 450px;
+  height: 250px;
   display: flex;
   z-index: 1;
   position: relative;
@@ -67,6 +69,7 @@
 .trangchu .chuaphimvaloc .ulloc {
   color: yellowgreen;
   text-align: left;
+  margin-left: 50px;
   width: 300px;
   list-style-type: none;
   font-size: 25px;

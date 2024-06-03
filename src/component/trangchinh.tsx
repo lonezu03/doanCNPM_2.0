@@ -174,7 +174,6 @@ const Trangchinh = () => {
           </ul>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
