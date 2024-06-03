@@ -5,6 +5,7 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { } from "react-router-dom";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { NextUIProvider } from '@nextui-org/react';
 
 
 

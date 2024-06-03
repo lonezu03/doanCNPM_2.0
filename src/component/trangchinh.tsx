@@ -49,7 +49,7 @@ const Trangchinh = () => {
     <div className="trangchu">
       {<Menu />}
       
-      {<Phimnoibat />}
+      {/* {<Phimnoibat />} */}
       <div className="tim">
       <form role="search" id="form">
             <input
